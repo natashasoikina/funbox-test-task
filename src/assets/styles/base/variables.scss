@@ -1,4 +1,16 @@
 //
+// MEDIA QUERIES
+//
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 640px,
+  desktop: 960px,
+  wide: 1280px
+);
+
+$mq-retina: (min-resolution: 192dpi), (min-resolution: 2dppx);
+
+//
 // TYPOGRAPHY
 //
 $fallback-font-family: Helvetica, sans-serif;
