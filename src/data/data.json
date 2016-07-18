@@ -1,1 +1,27 @@
-{}
+{
+  "products": [
+    {
+      "flavor": "с фуа-гра",
+      "weight": 0.5,
+      "portions": 10,
+      "gifts": 1,
+      "description": "Печень утки разварная с&nbsp;артишоками."
+    },
+    {
+      "flavor": "с рыбой",
+      "weight": 2,
+      "portions": 40,
+      "gifts": 2,
+      "description": "Головы щучьи с&nbsp;чесноком да&nbsp;свежайшая сёмгушка."
+    },
+    {
+      "flavor": "с курой",
+      "weight": 5,
+      "portions": 100,
+      "gifts": 5,
+      "review": "заказчик доволен",
+      "description": "Филе из&nbsp;цыплят с&nbsp;трюфелями в&nbsp;бульоне.",
+      "disabled": true
+    }
+  ]
+}
