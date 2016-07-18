@@ -1,0 +1,31 @@
+html {
+  font-family: $base-font-family;
+  line-height: 1.25;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font: {
+    family: $fallback-font-family;
+    size: 36px;
+    weight: 100;
+  }
+  line-height: 1.125;
+  -moz-osx-font-smoothing: auto;
+   -webkit-font-smoothing: auto;
+
+  .wf-active &,
+  .no-js & {
+    font-family: $heading-font-family;
+  }
+}
+
+h2 {
+  font: {
+    family: inherit;
+    size: 48px;
+    weight: 700;
+  }
+  line-height: 1.125;
+}
