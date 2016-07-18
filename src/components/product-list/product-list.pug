@@ -1,0 +1,7 @@
+include ../card/card
+
+mixin product-list(products)
+  ul
+    each product in products
+      li
+        +card(product)

@@ -1,8 +1,11 @@
 extends layout/layout
+include ../components/product-list/product-list
 
 block title
   title Funbox test task
 
 block content
-  section(role='region' aria-labelledby='section-heading')
-    h1#section-heading Page title
+  section(role='region' aria-labelledby='product-list-heading')
+    h1#product-list-heading Ты&nbsp;сегодня покормил кота?
+
+    +product-list(products)
