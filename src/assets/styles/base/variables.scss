@@ -4,3 +4,41 @@
 $fallback-font-family: Helvetica, sans-serif;
 $base-font-family: Trebuchet MS, $fallback-font-family;
 $heading-font-family: "Exo 2", $fallback-font-family;
+
+//
+// COLORS
+//
+$blue-color: #1698d9;
+$pink-color: #d91667;
+$hover-adjustment: (
+  saturation: -4%,
+  lightness: 7%
+);
+
+$colors: (
+  text: (
+    base: #000,
+    invert: #fff,
+    muted: #666,
+    alert: #ff6
+  ),
+  background: (
+    base: #000,
+    invert: #f2f2f2
+  ),
+  state: (
+    default: $blue-color,
+    default-hover: adjust-color(
+      $blue-color,
+      $saturation: map-get($hover-adjustment, saturation),
+      $lightness: map-get($hover-adjustment, lightness)
+    ),
+    selected: $pink-color,
+    selected-hover: adjust-color(
+      $pink-color,
+      $saturation: map-get($hover-adjustment, saturation),
+      $lightness: map-get($hover-adjustment, lightness)
+    ),
+    disabled: #b3b3b3
+  )
+);
