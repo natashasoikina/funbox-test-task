@@ -1,0 +1,20 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 -1.25em 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    flex: 0 1 20em;
+    margin-bottom: 1.25em;
+
+    @include mq($from: tablet) {
+      margin: {
+        right: .625em;
+        left: .625em;
+      }
+    }
+  }
+}
