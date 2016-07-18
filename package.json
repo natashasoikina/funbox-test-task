@@ -1,0 +1,51 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "natashasoikina",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.1",
+    "del": "^2.2.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-data": "^1.2.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-pug": "^3.0.3",
+    "gulp-pug-lint": "^0.1.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "postcss-assets": "^4.1.0",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-reporter": "^1.4.1",
+    "postcss-scss": "^0.1.8",
+    "postcss-sorting": "^1.6.1",
+    "pug-lint-config-clock": "^2.0.0",
+    "stylelint": "^6.8.0",
+    "stylelint-config-standard": "^10.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "node-normalize-scss": "^1.3.2"
+  }
+}

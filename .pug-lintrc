@@ -1,0 +1,9 @@
+{
+  "extends": "clock",
+  "disallowIdLiterals": null,
+  "disallowClassLiteralsBeforeIdLiterals": true,
+  "validateAttributeSeparator": {
+    "separator": " ",
+    "multiLineSeparator": "\n  "
+  }
+}
