@@ -1,0 +1,23 @@
+// Beveled corners
+// It's based on Lea Verou's solution from CSS Secrets Book
+// http://dabblet.com/gist/2937c990d6bfad274740
+@mixin beveled-corners($color, $top-left: 0, $top-right: 0, $bottom-right: 0, $bottom-left: 0) {
+  $sqrt2: 1.41421;
+
+  background:
+    linear-gradient(135deg, transparent $top-left / $sqrt2, $color 0) top left,
+    linear-gradient(-135deg, transparent $top-right / $sqrt2, $color 0) top right,
+    linear-gradient(-45deg, transparent $bottom-right / $sqrt2, $color 0) bottom right,
+    linear-gradient(45deg, transparent $bottom-left / $sqrt2, $color 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+
+  @supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)) {
+    background: $color;
+    clip-path: polygon(
+      $top-left 0, calc(100% - #{$top-right}) 0, 100% $top-right,
+      100% calc(100% - #{$bottom-right}), calc(100% - #{$bottom-right}) 100%,
+      $bottom-left 100%, 0 calc(100% - #{$bottom-left}), 0 $top-left
+    );
+  }
+}

@@ -1,7 +1,7 @@
-include ../card/card
+include ../product-item/product-item
 
 mixin product-list(products)
   ul.product-list
     each product in products
       li.product-list__item
-        +card(product)
+        +product-item(product)
