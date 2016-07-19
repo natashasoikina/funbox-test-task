@@ -1,7 +1,7 @@
 include ../product-item/product-item
 
 mixin product-list(products)
-  ul.product-list
+  ul.product-list.js-product-list
     each product in products
       li.product-list__item
         +product-item(product)

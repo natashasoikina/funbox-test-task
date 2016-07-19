@@ -1,9 +1,10 @@
 mixin product-item(product)
-  article.product(role='article' class=product.disabled ? 'product--disabled' : '')
-    .product__card
+  article.product.js-product(role='article' class=product.disabled ? 'product--disabled' : '')
+    .product__card.js-product-card.js-product-action
       .product__content
         header.product__header
           p.product__tagline Сказочное заморское яство
+          p.product__alert Котэ не&nbsp;одобряет?
           h2.product__title
             |Нямушка
             small.product__flavor= product.flavor
@@ -26,11 +27,12 @@ mixin product-item(product)
     footer.product__footer
       p.product__description!= product.description
       if product.disabled
-        p.product__alert Печалька, #{product.flavor} закончился.
+        p.product__status Печалька, #{product.flavor} закончился.
       else
         p.product__buy-action
           |Чего сидишь? Порадуй котэ,
-          button.product__buy-button(type='button') купи.
+          button.product__buy-button.js-product-action(type='button') купи.
+
   -
     function getNumEnding(number, endingArray) {
       var ending;
