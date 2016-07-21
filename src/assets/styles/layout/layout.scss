@@ -11,8 +11,11 @@ body {
     image:
       linear-gradient($gradient-parameters),
       resolve('bg-pattern.jpg');
-    attachment: fixed;
     color: color(background, base);
+  }
+
+  @supports (background-attachment: fixed) {
+    background-attachment: fixed;
   }
 
   @include mq($and: $mq-retina) {
